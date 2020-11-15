@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>暗算</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src='main.js'></script>
+</head>
+<body class="mx-5 py-5">
+    <h1>暗算</h1><br />
+    <h2>問題:
+        <span id='question'><span id='q1'></span> <span id='c'></span> <sapn id='q2'></span> = <br />
+    </h2>
+    <p>
+        <input type="number" id="answer" class="form-control" /><br /><button onclick='checkAnswer()' class='btn btn-primary' type="submit">答え合わせ</button><br />
+        結果:<span id="display"></span>
+    </p>
+    <p>
+        <button class="btn btn-secondary" onclick="makeQuestion()">つぎの問題</button>
+    </p>
+</body>
+</html>
