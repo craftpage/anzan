@@ -1,9 +1,18 @@
 function makeQuestion(){
-    q1 = Math.floor( Math.random () * 10) + 1
-    q2 = Math.floor( Math.random () * 10) + 1
     c = ['+','-','×','÷']
+    c4 = c[(Math.floor( Math.random () * 10)) % 4]
+    if(c4 === '+' || c4 === '-'){
+        q1 = Math.floor( Math.random () * 100) + 1
+        q2 = Math.floor( Math.random () * 100) + 1
+    } else if (c4 === '÷') {
+        q1 = Math.floor( Math.random () * 10) + 5
+        q2 = Math.floor( Math.random () * 10) + 1
+    } else {
+        q1 = Math.floor( Math.random () * 10) + 1
+        q2 = Math.floor( Math.random () * 10) + 1
+    }
     document.getElementById('q1').textContent = q1
-    document.getElementById('c').textContent = c[(Math.floor( Math.random () * 10)) % 4]
+    document.getElementById('c').textContent = c4
     document.getElementById('q2').textContent = q2
 }
 
