@@ -5,8 +5,9 @@ function makeQuestion(){
         q1 = Math.floor( Math.random () * 100) + 1
         q2 = Math.floor( Math.random () * 100) + 1
     } else if (c4 === '÷') {
-        q1 = Math.floor( Math.random () * 10) + 5
-        q2 = Math.floor( Math.random () * 10) + 1
+        q1 = Math.floor( Math.random () * 10) + 1
+        even = [2,4,6,8]
+        q2 = even[Math.floor(Math.random () * 10) % 4]
     } else {
         q1 = Math.floor( Math.random () * 10) + 1
         q2 = Math.floor( Math.random () * 10) + 1
